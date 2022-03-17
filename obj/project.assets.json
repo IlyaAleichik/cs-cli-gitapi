@@ -48,24 +48,31 @@
     ]
   },
   "packageFolders": {
-    "/home/ilya/.nuget/packages/": {}
+    "C:\\Users\\Ilya\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/mnt/C656D12856D119CF/Projects/netcore-cli-webapi-test/netcore-cli-webapi-test.csproj",
+      "projectUniqueName": "C:\\Users\\Ilya\\Desktop\\cs-cli-gitapi\\netcore-cli-webapi-test.csproj",
       "projectName": "netcore-cli-webapi-test",
-      "projectPath": "/mnt/C656D12856D119CF/Projects/netcore-cli-webapi-test/netcore-cli-webapi-test.csproj",
-      "packagesPath": "/home/ilya/.nuget/packages/",
-      "outputPath": "/mnt/C656D12856D119CF/Projects/netcore-cli-webapi-test/obj/",
+      "projectPath": "C:\\Users\\Ilya\\Desktop\\cs-cli-gitapi\\netcore-cli-webapi-test.csproj",
+      "packagesPath": "C:\\Users\\Ilya\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ilya\\Desktop\\cs-cli-gitapi\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/ilya/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Ilya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -104,7 +111,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.404/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
