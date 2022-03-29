@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using CodeBeautify;
 using System.Collections.Generic;
 using Newtonsoft.Json;
+using System.Linq;
 
 namespace netcore_cli_webapi_test
 {
@@ -36,11 +37,15 @@ namespace netcore_cli_webapi_test
        
             myDeserializedClass = JsonConvert.DeserializeObject<List<Root>>(jsonValue);
             int count = 0;
-            foreach (Root item in myDeserializedClass)
+     
+            IEnumerable<Root> resultsOnSteps = myDeserializedClass.OrderBy(s => s.Name);
+
+            foreach (Root item in resultsOnSteps)
             {
                 Console.WriteLine(item.Name);
             }
             Console.WriteLine(myDeserializedClass.Count);
+            Console.ReadLine();
         }
     }
 }
