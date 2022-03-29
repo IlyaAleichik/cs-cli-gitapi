@@ -6,5 +6,5 @@ build_property.ProjectTypeGuids =
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = netcore_cli_webapi_test
-build_property.ProjectDir = C:\Users\Ilya\Desktop\cs-cli-gitapi\
+build_property.RootNamespace = cs_cli_gitapi
+build_property.ProjectDir = /home/ilya/Desktop/cs-cli-gitapi/

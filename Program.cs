@@ -3,12 +3,11 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
-using CodeBeautify;
 using System.Collections.Generic;
-using Newtonsoft.Json;
 using System.Linq;
+using Newtonsoft.Json;
 
-namespace netcore_cli_webapi_test
+namespace cs_cli_gitapi
 {
     class Program
     {
@@ -19,7 +18,7 @@ namespace netcore_cli_webapi_test
             HttpResponseMessage response = await client.GetAsync(url);
             if (response.StatusCode == HttpStatusCode.Unauthorized)
             {
-                var finalRequestUri = response.RequestMessage.RequestUri; 
+                var finalRequestUri = response.RequestMessage.RequestUri;
                 if (finalRequestUri != url)
                 {
                     response = await client.GetAsync(finalRequestUri);
@@ -30,20 +29,10 @@ namespace netcore_cli_webapi_test
 
         static async Task Main(string[] args)
         {
-            List<Root> myDeserializedClass;
-
             Uri url = new Uri("https://gitlab.com/api/v4/users/IlyaAleichik/projects?&per_page=100");
             string jsonValue = await MakeHTTPCall(url, new AuthenticationHeaderValue("Bearer", "glpat-xjg9fsxRP9gizt25TfYH"));
-       
-            myDeserializedClass = JsonConvert.DeserializeObject<List<Root>>(jsonValue);
-            int count = 0;
-     
-            IEnumerable<Root> resultsOnSteps = myDeserializedClass.OrderBy(s => s.Name);
-
-            foreach (Root item in resultsOnSteps)
-            {
-                Console.WriteLine(item.Name);
-            }
+            List<Repositories> myDeserializedClass = JsonConvert.DeserializeObject<List<Repositories>>(jsonValue);
+            foreach (Repositories item in myDeserializedClass.OrderBy(s => s.Name)) { Console.WriteLine(item.Name); }
             Console.WriteLine(myDeserializedClass.Count);
             Console.ReadLine();
         }

@@ -2,7 +2,7 @@
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
 		<TargetFramework>net5.0</TargetFramework>
-		<RootNamespace>netcore_cli_webapi_test</RootNamespace>
+		<RootNamespace>cs_cli_gitapi</RootNamespace>
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.1"/>

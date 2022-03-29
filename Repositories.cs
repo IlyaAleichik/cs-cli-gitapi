@@ -5,9 +5,8 @@ using System.Text.Json.Serialization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace CodeBeautify
+namespace cs_cli_gitapi
 {
-
     public class Namespace
     {
         [JsonPropertyName("id")]
@@ -122,7 +121,7 @@ namespace CodeBeautify
         public object GroupAccess { get; set; }
     }
 
-    public class Root
+    public class Repositories
     {
         [JsonPropertyName("id")]
         public int Id { get; set; }
