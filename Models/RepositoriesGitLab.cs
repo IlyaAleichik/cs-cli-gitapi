@@ -1,11 +1,8 @@
 using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Text.Json.Serialization;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
 
-namespace cs_cli_gitapi
+namespace cs_cli_gitapi.Models
 {
     public class Namespace
     {
@@ -58,7 +55,7 @@ namespace cs_cli_gitapi
         public string Members { get; set; }
     }
 
-    public class Owner
+    public class OwnerLab
     {
         [JsonPropertyName("id")]
         public int Id { get; set; }
@@ -112,7 +109,7 @@ namespace cs_cli_gitapi
         public int NotificationLevel { get; set; }
     }
 
-    public class Permissions
+    public class PermissionsLab
     {
         [JsonPropertyName("project_access")]
         public ProjectAccess ProjectAccess { get; set; }
@@ -121,7 +118,7 @@ namespace cs_cli_gitapi
         public object GroupAccess { get; set; }
     }
 
-    public class Repositories
+    public class RepositoriesGitLab
     {
         [JsonPropertyName("id")]
         public int Id { get; set; }
@@ -199,7 +196,7 @@ namespace cs_cli_gitapi
         public string Visibility { get; set; }
 
         [JsonPropertyName("owner")]
-        public Owner Owner { get; set; }
+        public OwnerLab Owner { get; set; }
 
         [JsonPropertyName("resolve_outdated_diff_discussions")]
         public bool ResolveOutdatedDiffDiscussions { get; set; }
@@ -382,6 +379,6 @@ namespace cs_cli_gitapi
         public List<object> ComplianceFrameworks { get; set; }
 
         [JsonPropertyName("permissions")]
-        public Permissions Permissions { get; set; }
+        public PermissionsLab Permissions { get; set; }
     }
 }
