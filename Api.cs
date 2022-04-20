@@ -36,7 +36,7 @@ namespace cs_cli_gitapi
         public async Task GetRepoGitLab()
         {
             Uri url = new Uri("https://gitlab.com/api/v4/users/IlyaAleichik/projects?&per_page=100");
-            string jsonValue = await MakeHTTPCall(url, new AuthenticationHeaderValue("Bearer", "glpat-xjg9fsxRP9gizt25TfYH"));
+            string jsonValue = await MakeHTTPCall(url, new AuthenticationHeaderValue("Bearer", ""));
             List<RepositoriesGitLab> myDeserializedClass = JsonConvert.DeserializeObject<List<RepositoriesGitLab>>(jsonValue);
             foreach (RepositoriesGitLab item in myDeserializedClass.OrderBy(s => s.Name)) { Console.WriteLine(item.Name); }
             Console.WriteLine(myDeserializedClass.Count);
@@ -46,7 +46,7 @@ namespace cs_cli_gitapi
         public async Task GetRepoGitHub()
         {
             Uri url = new Uri("https://api.github.com/users/IlyaAleichik/repos?&per_page=1000");
-            string jsonValue = await MakeHTTPCall(url, new AuthenticationHeaderValue("Bearer", "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"));
+            string jsonValue = await MakeHTTPCall(url, new AuthenticationHeaderValue("Bearer", ""));
             List<Root> myDeserializedClass2 = JsonConvert.DeserializeObject<List<Root>>(jsonValue);
             foreach (Root item in myDeserializedClass2.OrderBy(s => s.Name)) { Console.WriteLine(item.Name); }
             Console.WriteLine(myDeserializedClass2.Count);
