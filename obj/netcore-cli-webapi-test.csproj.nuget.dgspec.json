@@ -1,28 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/home/ilya/Desktop/cs-cli-gitapi/netcore-cli-webapi-test.csproj": {}
+    "C:\\Users\\Ilya\\Desktop\\cs-cli-gitapi\\netcore-cli-webapi-test.csproj": {}
   },
   "projects": {
-    "/home/ilya/Desktop/cs-cli-gitapi/netcore-cli-webapi-test.csproj": {
+    "C:\\Users\\Ilya\\Desktop\\cs-cli-gitapi\\netcore-cli-webapi-test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ilya/Desktop/cs-cli-gitapi/netcore-cli-webapi-test.csproj",
+        "projectUniqueName": "C:\\Users\\Ilya\\Desktop\\cs-cli-gitapi\\netcore-cli-webapi-test.csproj",
         "projectName": "netcore-cli-webapi-test",
-        "projectPath": "/home/ilya/Desktop/cs-cli-gitapi/netcore-cli-webapi-test.csproj",
-        "packagesPath": "/home/ilya/.nuget/packages/",
-        "outputPath": "/home/ilya/Desktop/cs-cli-gitapi/obj/",
+        "projectPath": "C:\\Users\\Ilya\\Desktop\\cs-cli-gitapi\\netcore-cli-webapi-test.csproj",
+        "packagesPath": "C:\\Users\\Ilya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ilya\\Desktop\\cs-cli-gitapi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "/home/ilya/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Ilya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

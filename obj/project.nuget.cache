@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "u2JTfIFJ0SvCeXI01rQbDobraK5o93jwg3BXwJ7H7a+VMjhGJRzAVfj9ZwfdRPjQB/bsTWIb+gpsz5EXuV9Ddg==",
+  "dgSpecHash": "3YcLjWC3BGAYJqI0WuGcAoF1rG/Hx2xApUTvi0NvQqd5xiwI9PwdynI+xIg2qHa1eQF7pIljkgY5ChSjHwqFNQ==",
   "success": true,
-  "projectFilePath": "/home/ilya/Desktop/cs-cli-gitapi/netcore-cli-webapi-test.csproj",
+  "projectFilePath": "C:\\Users\\Ilya\\Desktop\\cs-cli-gitapi\\netcore-cli-webapi-test.csproj",
   "expectedPackageFiles": [
-    "/home/ilya/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\Ilya\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

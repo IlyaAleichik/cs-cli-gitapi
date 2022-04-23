@@ -15,10 +15,10 @@ namespace cs_cli_gitapi
             switch (paramString[0])
             {
                 case "gitlab":
-                    await api.GetRepoGitLab();
+                    await api.GetRepoGitLab(Constants.GITLAB, new Uri(Constants.GITLAB_API_GETREPO_URL));
                     break;
                 case "githab":
-                    await api.GetRepoGitHub();
+                    await api.GetRepoGitHub(Constants.GITHUB, new Uri(Constants.GITHAB_API_GET_PUBLICREPO_URL));
                     break;
             }
         }
